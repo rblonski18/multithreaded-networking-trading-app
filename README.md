@@ -1,0 +1,3 @@
+# Yet another trading app
+
+This application allows for the user to input a schedule of trades to be processed and a listing of traders and their cash balances. A server program is initialized and accepts only the same number of client connections as specified in the traders file. A separate client program asks the user for the name of the host and port they're looking to connect to, and connects to it. The client program takes on the role of a trader, and is assigned to execute trades as quickly as possible in accordance with the balance mentioned in the trader file. For each trade executed, the thread sleeps for a full second. Stock prices are found by fetching closing prices from Tiingo API call and parsing the JSON returned. 
